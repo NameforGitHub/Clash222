@@ -161,18 +161,13 @@ proxy-groups:
   - {name: TR, <<: *a4, filter: "土|耳其|TR|(?i)Turkey"}
 
   - {name: 🚀 Manual, <<: *a2}
-  - {name: Adobe, type: select, proxies: [REJECT]}
   - {name: Apple, type: select, proxies: [REJECT]}
-  - {name: Amazon, type: select, proxies: [REJECT]}
   - {name: China, type: select, proxies: [DIRECT]}
-  - {name: DingTalk, type: select, proxies: [US]}
   - {name: Facebook, type: select, proxies: [REJECT]}
   - {name: GitHub, type: select, proxies: [US]}
   - {name: Google, type: select, proxies: [US]}
   - {name: Microsoft, type: select, proxies: [US]}
-  - {name: Netflix, type: select, proxies: [REJECT]}
   - {name: NetEase, type: select, proxies: [DIRECT]}
-  - {name: Spotify, type: select, proxies: [US]}
   - {name: Speedtest, type: select, proxies: [DIRECT]}
   - {name: Steam, type: select, proxies: [DIRECT]}
   - {name: Telegram, type: select, proxies: [US]}
@@ -182,25 +177,19 @@ proxy-groups:
   - {name: YouTube, type: select, proxies: [REJECT]}
   - {name: WhatsApp, type: select, proxies: [REJECT]}
   - {name: WeChat, type: select, proxies: [DIRECT]}
-  - {name: PayPal, type: select, proxies: [REJECT]}
-  - {name: Zoom, type: select, proxies: [DIRECT]}
   - {name: ChinaIP, type: select, proxies: [DIRECT]}
   - {name: 🌏 Global, <<: *a3}
   - {name: MATCH, <<: *a3}
 
 rule-providers:
-  Adobe: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Adobe.yaml, path: ./ruleset/Adobe.yaml}
   Apple: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Apple.yaml, path: ./ruleset/Apple.yaml}
-  Amazon: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Amazon.yaml, path: ./ruleset/Amazon.yaml}
   China: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/China.yaml, path: ./ruleset/China.yaml}
-  DingTalk: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/DingTalk.yaml, path: ./ruleset/DingTalk.yaml}
   Facebook: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Facebook.yaml, path: ./ruleset/Facebook.yaml}
   GitHub: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/GitHub.yaml, path: ./ruleset/GitHub.yaml}
   Google: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Google.yaml, path: ./ruleset/Google.yaml}
   Microsoft: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Microsoft.yaml, path: ./ruleset/Microsoft.yaml}
   Netflix: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Netflix.yaml, path: ./ruleset/Netflix.yaml}
   NetEase: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/NetEase.yaml, path: ./ruleset/NetEase.yaml}
-  Spotify: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Spotify.yaml, path: ./ruleset/Spotify.yaml}
   Speedtest: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Speedtest.yaml, path: ./ruleset/Speedtest.yaml}
   Steam: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Steam.yaml, path: ./ruleset/Steam.yaml}
   Telegram: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Telegram.yaml, path: ./ruleset/Telegram.yaml}
@@ -210,8 +199,6 @@ rule-providers:
   YouTube: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/YouTube.yaml, path: ./ruleset/YouTube.yaml}
   WhatsApp: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/WhatsApp.yaml, path: ./ruleset/WhatsApp.yaml}
   WeChat: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/WeChat.yaml, path: ./ruleset/WeChat.yaml}
-  PayPal: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/PayPal.yaml, path: ./ruleset/PayPal.yaml}
-  Zoom: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Zoom.yaml, path: ./ruleset/Zoom.yaml}
   ChinaIP: {<<: *a7, url: https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml, path: ./ruleset/ChinaIP.yaml}
   Proxy: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Proxy.yaml, path: ./ruleset/Proxy.yaml}
   
