@@ -161,21 +161,20 @@ proxy-groups:
   - {name: TR, <<: *a4, filter: "土|耳其|TR|(?i)Turkey"}
 
   - {name: 🚀 Manual, <<: *a2}
-  - {name: Apple, type: select, proxies: [REJECT]}
+  - {name: Apple, type: select, proxies: [DIRECT,REJECT]}
   - {name: China, type: select, proxies: [DIRECT]}
   - {name: Facebook, type: select, proxies: [REJECT]}
-  - {name: GitHub, type: select, proxies: [US]}
-  - {name: Google, type: select, proxies: [US]}
-  - {name: Microsoft, type: select, proxies: [US]}
+  - {name: GitHub, type: select, proxies: [JP,TW,HK,US,DIRECT]}
+  - {name: Google, type: select, proxies: [JP,TW,HK,US,DIRECT]}
+  - {name: Microsoft, type: select, proxies: [JP,TW,HK,US,DIRECT]}
   - {name: NetEase, type: select, proxies: [DIRECT]}
   - {name: Speedtest, type: select, proxies: [DIRECT]}
-  - {name: Steam, type: select, proxies: [DIRECT]}
-  - {name: Telegram, type: select, proxies: [US]}
-  - {name: Twitter, type: select, proxies: [REJECT]}
+  - {name: Steam, type: select, proxies: [JP,TW,HK,US,DIRECT]}
+  - {name: Telegram, type: select, proxies: [JP,TW,HK,US,DIRECT]}
+  - {name: Twitter, type: select, proxies: [JP,TW,HK,US,DIRECT]}
   - {name: Tencent, type: select, proxies: [DIRECT,HK,TW]}
   - {name: TencentVideo, type: select, proxies: [DIRECT]}
-  - {name: YouTube, type: select, proxies: [REJECT]}
-  - {name: WhatsApp, type: select, proxies: [REJECT]}
+  - {name: YouTube, type: select, proxies: [US,JP,TW,HK,DIRECT]}
   - {name: WeChat, type: select, proxies: [DIRECT]}
   - {name: ChinaIP, type: select, proxies: [DIRECT]}
   - {name: 🌏 Global, <<: *a3}
